@@ -1,1 +1,1 @@
-# principais_operacoes_matematicas
+# principais_operacoes_matematicas_portugol
