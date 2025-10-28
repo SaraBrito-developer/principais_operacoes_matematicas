@@ -6,31 +6,35 @@ programa
 		
 		real a, b, soma, sub, mult, divi
 
-		escreva("Digite o primeiro Número: ")
+		escreva("Digite o primeiro Número (a): ")
 			leia(a)
 
-		escreva("Digite o segundo Número:")
+		escreva("Digite o segundo Número (b): ")
 			leia(b)
 
-		soma = b + a
+		// --- CÁLCULOS ---
+		soma = a + b
 		sub = a - b
-		mult = b * a
-		divi = a / b
+		mult = a * b
 
-		escreva("\nA soma dos numeros é igual a: ", soma)
-		escreva("\nA subtração dos numeros é igual a: ", sub)
-		escreva("\nA multiplicação dos numeros é igual a: ", mult)
-		escreva("\nA divisão dos numeros é igual a: ", divi)
+		// --- EXIBIÇÃO ---
+		escreva("\n--- RESULTADOS ---\n")
+		escreva("\nA soma (a + b) é igual a: ", soma)
+		escreva("\nA subtração (a - b) é igual a: ", sub)
+		escreva("\nA multiplicação (a * b) é igual a: ", mult)
+
+		se (b != 0)
+		{
+			// Se 'b' for diferente de zero, podemos dividir
+			divi = a / b
+			escreva("\nA divisão (a / b) é igual a: ", divi)
+		}
+		senao
+		{
+			// Se 'b' for igual a zero, mostramos uma mensagem de erro
+			escreva("\nA divisão (a / b): Não é possível dividir por zero.")
+		}
+		
+		escreva("\n") 
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 343; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
